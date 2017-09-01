@@ -8,3 +8,4 @@ tenets:
     <php.expr_assign[:]:
       php.expr_variable[:]:
         name: /.*SQL$/
+      php.expr_binaryop_concat[:]
