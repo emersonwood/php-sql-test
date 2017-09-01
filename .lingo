@@ -7,5 +7,5 @@ tenets:
   match: |
     <php.expr_assign[:]:
       php.expr_variable[:]:
-        name: /.*SQL$/
+        name: /.*SQL*/
       php.expr_binaryop_concat[:]
