@@ -1,19 +1,13 @@
 <?php
 
 function ExecuteSQL ($query) {
-	return sprintf("Some result from \"%s\"\n\n", $query);
+	return "SQL result\n";
 }
 
 function Main() {
-	$getUserNamesSQL = "SELECT name FROM Users;";
-	$userNames = ExecuteSQL($getUserNamesSQL);
+	$userNamesSQL = "SELECT name FROM Users";
+	$userNames = ExecuteSQL($userNamesSQL);
 	print $userNames;
-
-	print("Please enter your username: ");
-	$userName = rtrim(fgets(STDIN), "\n");
-	$getUserDataSQL = "SELECT * FROM Users WHERE UserId = " . $userName . ";";
-	$userData = ExecuteSQL($getUserDataSQL);
-	print $userData;
 }
 
 Main();
