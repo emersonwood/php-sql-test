@@ -12,5 +12,5 @@ tenets:
       @ clair.comment
       php.expr_assign({depth: any}):
         php.expr_variable({depth: any}):
-          name: /.*SQL*/
+          name: /.*SQL/
         php.expr_binaryop_concat({depth: any})
