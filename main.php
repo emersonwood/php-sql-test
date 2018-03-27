@@ -9,7 +9,7 @@ function Main() {
 	$userNames = ExecuteSQL($getUserNamesSQL);
 	print $userNames;
 
-	print("Please enter your username:   ");
+	print("Please enter your username:    ");
 	$userName = rtrim(fgets(STDIN), "\n");
 	$getUserDataSQL = "SELECT * FROM Users WHERE UserName = " . $userName . ";";
 	$userData = ExecuteSQL($getUserDataSQL);
